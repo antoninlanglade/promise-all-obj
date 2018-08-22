@@ -1,7 +1,7 @@
 # promise-all-obj
 Promise All from Object
 
-<br><br>
+<br>
 
 ## Requirements
 - Polyfill Promise on old browsers
@@ -24,15 +24,15 @@ $ npm install --save @antoninlanglade/promise-all-obj
 ## Usage
 
 ```js
-import PromiseAllObj from '@antoninlanglade/promise-all-obj' // web
+import PromiseAllObj from 'promise-all-obj' // web
 // or
-const PromiseAllObj = require('@antoninlanglade/promise-all-obj') // node
+const PromiseAllObj = require('promise-all-obj') // node
 
 var testObj = {
   promise1: new Promise((res, rej) => {
     setTimeout(() => res('p1'), 2000)
   }),
-  promise2: new Promise((res, rej) => res('p3'))
+  promise2: new Promise((res, rej) => res('p2'))
 };
 
 PromiseAllObj(testObj)
